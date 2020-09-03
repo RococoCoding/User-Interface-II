@@ -82,6 +82,7 @@ img {
     box-shadow: .5rem .5rem 4rem -0.5rem black; /*thanks to erick in slack!*/
 }
 
+
 /*#region nav*/
 header {
     position: fixed;
@@ -121,6 +122,11 @@ nav a {
     position: absolute;
     width: 35vw;
     border: 4px groove var(--med-dark-color2);
+}
+
+.intro img:hover {
+    margin: -2%;
+    width: 40vw;
 }
 
 .intro div {
@@ -166,6 +172,10 @@ h2 {
     display: block;
 }
 
+.projects img:hover {
+    width: 22vw;
+    height: 22vw;
+}
 .placeholder {
     opacity: 0.5;
 }
