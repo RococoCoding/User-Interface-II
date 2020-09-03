@@ -205,7 +205,7 @@ footer {
 }
 /*#endregion*/
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 550px) {
     body {
         font-size: 1rem;
     }
@@ -245,12 +245,12 @@ footer {
 
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
     body {
         font-size: 1.5rem;
     }
     header {
-        height: 10%;
+        height: 12%;
     }
     
     .intro {
