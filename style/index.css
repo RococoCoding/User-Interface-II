@@ -1,1 +1,102 @@
-/* Add CSS styling here */
+/*#region css reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	/* border: 0; */
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*#endregion*/
+:root {
+    --dark-color2: #12095F;
+    --med-dark-color2: #211778;
+    --med-color2: #392E96;
+    --med-light-color2: #574EA4;
+    --light-color2:#867ECA;
+    --dark-color1: #005350;
+    --med-dark-color1: #076966;
+    --med-color1: #1A837F;
+    --med-light-color1: #39908C;
+    --light-color1: #6ABAB7;
+    --offwhite: #dbdbdb;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    position: absolute;
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: #12095F;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 13%;
+    background-color: var(--med-color1);
+    padding: 1%;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1.5%;
+    margin-left: 0.5%;
+    color: var(--med-color2);
+}
+
+nav a {
+    text-decoration: none;
+    background-color: var(--med-color2);
+    color: var(--offwhite);
+    border-radius: 15px;
+    padding: 0.2% 0.5%;
+    margin-left: 0.5%;
+}
+
+.intro {
+    margin-top: 10%;
+}
