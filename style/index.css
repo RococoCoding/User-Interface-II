@@ -151,16 +151,17 @@ h2 {
 
 /*#region main*/
 .projects {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-row-gap: 5%;
+    display: flex;
+    flex-wrap: wrap;
     margin: 10% 2% 5%;
     text-align: center;
 }
-
+.projects div {
+    margin: 2%;
+}
 .projects img {
-    width: 90%;
-    height: 20vw;
+    width: 19vw;
+    height: 19vw;
     object-fit: cover;
     display: block;
 }
