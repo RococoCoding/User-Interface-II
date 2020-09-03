@@ -103,15 +103,18 @@ nav a {
     padding: 0.2% 0.5%;
     margin-left: 0.5%;
 }
+
 /*#endregion*/
 
 /*#region intro*/
 .intro {
     display: flex;
+    flex-direction: column;
     margin: 13% 2% 2% 2%;
 }
 
 .intro img {
+    position: absolute;
     width: 35vw;
     border: 4px groove var(--med-dark-color2);
 }
@@ -119,9 +122,8 @@ nav a {
 .intro div {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
     margin-top: 1%;
-    margin-left: 3%;
+    margin-left: 40%;
     line-height: 3rem;
 }
 
@@ -139,6 +141,7 @@ h2 {
     color: var(--offwhite);
     margin-bottom: 2%;
 }
+
 /*#endregion*/
 
 
@@ -147,7 +150,7 @@ h2 {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-row-gap: 5%;
-    margin: 0 2% 5% 2%;
+    margin: 5% 2%;
     text-align: center;
 }
 
@@ -185,3 +188,43 @@ footer {
     width: 2vw;
 }
 /*#endregion*/
+
+@media only screen and (max-width: 450px) {
+    body {
+        font-size: 1rem;
+    }
+
+    header {
+        text-align: center;
+        height: 8%;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .intro {
+        margin-top: 20%;
+    }
+
+    h2 {
+        font-size: 3rem;
+        margin: 3% 0 5% 45%;
+    }
+
+    .intro div {
+        line-height: 2rem;
+        margin-left: 0;
+    }
+
+    .intro div a {
+        font-size: 2rem;
+        margin-left: 50%;
+    }
+
+    .intro div p {
+        margin-top: 3%;
+        align-self: stretch;
+    }
+
+}
