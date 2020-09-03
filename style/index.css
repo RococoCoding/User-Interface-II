@@ -228,3 +228,25 @@ footer {
     }
 
 }
+
+@media only screen and (max-width: 800px) {
+    body {
+        font-size: 1.5rem;
+    }
+    header {
+        height: 10%;
+    }
+    
+    .intro {
+        margin-top: 18%;
+    }
+
+    .intro div {
+        margin-top: -2%;
+        line-height: 2rem;
+    }
+
+    .intro a {
+        margin: 3% 0;
+    }
+}
