@@ -78,6 +78,10 @@ a {
     color: white;
 }
 
+img {
+    box-shadow: .5rem .5rem 4rem -0.5rem black; /*thanks to erick in slack!*/
+}
+
 /*#region nav*/
 header {
     position: fixed;
@@ -150,7 +154,7 @@ h2 {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-row-gap: 5%;
-    margin: 5% 2%;
+    margin: 10% 2% 5%;
     text-align: center;
 }
 
