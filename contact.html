@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=    <h1> ABOUT </h1>, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Mitr:wght@500&&display=swap" rel="stylesheet">
+    <title>Contact</title>
 </head>
 <body>
-    <h1> CONTACT </h1>
+    <header>
+        <h1>Rococo Code</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="">Projects</a>
+        </nav>
+    </header>
+    <main>
+        <h1>CONTACT</h1>
+        <!-- <label id="name-label" for="name">Name:</label> -->
+        <form id="contact-me">
+            <input type="text"
+            id="name"
+            name="name"
+            class="text-input"
+            placeholder="Name"
+            required/>
+            <!-- <label id="email-label" for="email">Email:</label> -->
+            <input type="email"
+                name="email"
+                id="email"
+                class="text-input"
+                placeholder="Email"
+                required/>
+            <textarea id="message"
+            name="message"
+            placeholder="Message"></textarea>
+        </form>
+        <button>Submit</button>
+    </main>
 </body>
 </html>
