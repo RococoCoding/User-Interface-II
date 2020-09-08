@@ -1,1 +1,290 @@
-/* Add CSS styling here */
+/*#region css reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	/* border: 0; */
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*#endregion*/
+
+:root {
+    --dark-color2: #12095F;
+    --med-dark-color2: #211778;
+    --med-color2: #392E96;
+    --med-light-color2: #574EA4;
+    --light-color2:#867ECA;
+    --dark-color1: #001c1a;
+    --med-dark-color1: #076966;
+    --med-color1: #1A837F;
+    --med-light-color1: #39908C;
+    --light-color1: #6ABAB7;
+    --offwhite: #dbdbdb;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    position: absolute;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light-color1);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    box-shadow: .5rem .5rem 4rem -0.5rem black; /*thanks to erick in slack!*/
+}
+
+
+/*#region nav*/
+header {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 13%;
+    background-color: var(--med-color1);
+    padding: 1%;
+}
+
+h1 {
+    font-family: 'Mitr', sans-serif;
+    font-size: 5rem;
+    margin-bottom: 1.5%;
+    margin-left: 0.5%;
+    color: var(--med-dark-color2);
+}
+
+nav a {
+    background-color: var(--med-dark-color2);
+    color: var(--offwhite);
+    border-radius: 15px;
+    padding: 0.2% 0.5%;
+    margin-left: 0.5%;
+}
+
+/*#endregion*/
+
+/*#region intro*/
+.intro {
+    display: flex;
+    flex-direction: column;
+    margin: 13% 2% 2% 2%;
+}
+
+.intro img {
+    position: absolute;
+    width: 35vw;
+    border: 4px groove var(--med-dark-color2);
+}
+
+.intro img:hover {
+    margin: -2%;
+    width: 40vw;
+}
+
+.intro div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+    margin-left: 40%;
+    line-height: 3rem;
+}
+
+h2 {
+    font-size: 5rem;
+    margin-bottom: 3%;
+}
+
+.intro div a {
+    font-size: 2.5rem;
+    background-color: var(--med-dark-color2);
+    width: max-content;
+    padding: 1% 3%;
+    border-radius: 25px;
+    color: var(--offwhite);
+    margin-bottom: 2%;
+}
+
+/*#endregion*/
+
+
+/*#region main*/
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10% 2% 5%;
+    text-align: center;
+    height: 47vw;
+}
+.projects div {
+    margin: 2%;
+}
+.projects img {
+    width: 19vw;
+    height: 19vw;
+    object-fit: cover;
+    display: block;
+}
+
+.projects img:hover {
+    width: 22vw;
+    height: 22vw;
+}
+.placeholder {
+    opacity: 0.5;
+}
+/*#endregion*/
+
+/*#region footer*/
+footer {
+    text-align: center;
+}
+
+
+.contact-me {
+    display: block;
+    /* make it a button
+    margin: 1% 40% 1% 44%;
+    background-color: var(--dark-color2);
+    color: white;
+    width: max-content;
+    padding: 0.5%;
+    border-radius: 25px; */
+    margin: 1% 0;
+    color: var(--dark-color2);
+}
+
+.social-media {
+    width: 2vw;
+    margin-bottom: 3%;
+}
+/*#endregion*/
+
+
+/* #region ipad pro media query */
+@media only screen and (max-width: 1025px) { 
+    header {
+        height: 7.5%;
+    }
+
+    .intro {
+        margin-top: 16%;
+    }
+}
+/* #endregion */
+
+/* #region ipad media query */
+@media only screen and (max-width: 800px) { /* ipad */
+    body {
+        font-size: 1.5rem;
+    }
+    header {
+        height: 10%;
+    }
+    
+    .intro {
+        margin-top: 18%;
+    }
+
+    .intro div {
+        margin-top: -2%;
+        line-height: 2rem;
+    }
+
+    .intro a {
+        margin: 3% 0;
+    }
+}
+/* #endregion */
+
+/*#region mobile media query*/
+@media only screen and (max-width: 500px) { 
+    body {
+        font-size: 1rem;
+    }
+
+    header {
+        text-align: center;
+        height: 9%;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+    
+    .intro img {
+        margin-top: 2%;
+    }
+
+    h2 {
+        font-size: 3rem;
+        margin: 3% 0 5% 45%;
+    }
+
+    .intro div {
+        line-height: 2rem;
+        margin-left: 0;
+    }
+
+    .intro div a {
+        font-size: 2rem;
+        margin-left: 50%;
+    }
+
+    .intro div p {
+        margin-top: 10%;
+        align-self: stretch;
+    }
+    .projects {
+        margin-top: 4%;
+        padding-bottom: 4%;
+    }
+}
+/*#endregion*/

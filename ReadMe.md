@@ -73,3 +73,17 @@ Follow these steps for completing your project.
 - [ ] Submit a pull request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
 - [ ] Add your Team Lead as a reviewer on the pull request
 - [ ] Your Team Lead will count the project as complete by merging the branch back into master
+
+
+PART2:
+ Introduce max-width media queries into your project at 800px and 500px
+ Add accessability features to your webpage
+ 
+ stretch: 
+  Test your website at several breakpoints and refactor code as needed. A few common breakpoints are below:
+ iPhone: 360×640
+ Laptop: 1366×768
+ Widescreen: 1920×1080
+ Test your webpage's accessibility with a screen reader like this
+ Start over with min-width media queries to get a feel for how a mobile first approach would be like. I recommend making a branch of all your content in a new folder named "mobile-first" to keep it separate
+ Test your webpage's accessibility with a screen reader like this
