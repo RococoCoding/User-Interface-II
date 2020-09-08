@@ -190,7 +190,8 @@ footer {
 
 .contact-me {
     display: block;
-    /* margin: 1% 40% 1% 44%;
+    /* make it a button
+    margin: 1% 40% 1% 44%;
     background-color: var(--dark-color2);
     color: white;
     width: max-content;
@@ -206,14 +207,52 @@ footer {
 }
 /*#endregion*/
 
-@media only screen and (max-width: 550px) {
+
+/* #region ipad pro media query */
+@media only screen and (max-width: 1025px) { 
+    header {
+        height: 7.5%;
+    }
+
+    .intro {
+        margin-top: 16%;
+    }
+}
+/* #endregion */
+
+/* #region ipad media query */
+@media only screen and (max-width: 800px) { /* ipad */
+    body {
+        font-size: 1.5rem;
+    }
+    header {
+        height: 10%;
+    }
+    
+    .intro {
+        margin-top: 18%;
+    }
+
+    .intro div {
+        margin-top: -2%;
+        line-height: 2rem;
+    }
+
+    .intro a {
+        margin: 3% 0;
+    }
+}
+/* #endregion */
+
+/*#region mobile media query*/
+@media only screen and (max-width: 500px) { 
     body {
         font-size: 1rem;
     }
 
     header {
         text-align: center;
-        max-height: 9%;
+        height: 9%;
     }
 
     h1 {
@@ -245,27 +284,7 @@ footer {
     }
     .projects {
         margin-top: 4%;
+        padding-bottom: 4%;
     }
 }
-
-@media only screen and (max-width: 1000px) {
-    body {
-        font-size: 1.5rem;
-    }
-    header {
-        height: 12%;
-    }
-    
-    .intro {
-        margin-top: 18%;
-    }
-
-    .intro div {
-        margin-top: -2%;
-        line-height: 2rem;
-    }
-
-    .intro a {
-        margin: 3% 0;
-    }
-}
+/*#endregion*/
